@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+  }
+  
+  #navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #navbar li {
+    margin-bottom: 10px;
+  }
+  
+  #main-doc {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .main-section {
+    margin-bottom: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    #navbar {
+      width: 100%;
+      position: static;
+    }
+  }
+  
