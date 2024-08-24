@@ -1,0 +1,172 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+/* Container to hold both sections */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Distributes space between services and search sections */
+}
+
+/* Services section styling */
+.services-section {
+    flex: 2; /* Takes up more space compared to search section */
+    margin-right: 20px; /* Adds spacing between sections */
+}
+
+/* Search section styling */
+.search-section {
+    flex: 1; /* Takes up less space compared to services section */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Table styling */
+.listing-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table cell styling */
+.listing-table td {
+    width: 33%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Item card styling */
+.item {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content evenly */
+    height: 400px; /* Fixed height for uniform card size */
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for item card */
+.item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling within item card */
+.item img {
+    width: 100%; /* Ensures the image fills the card width */
+    height: auto;
+    max-height: 150px; /* Maximum height for image */
+    object-fit: cover; /* Ensures the image covers the designated area */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Item name styling */
+.item h3 {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+    margin: 15px 0;
+    line-height: 1.2; /* Improves readability */
+    height: 50px; /* Fixed height for title */
+    overflow: hidden; /* Prevents overflow */
+    text-overflow: ellipsis; /* Adds ellipsis for overflow text */
+}
+
+/* Item description styling */
+.item p {
+    color: #666;
+    margin: 10px 0;
+    line-height: 1.4; /* Improves readability */
+    flex: 1; /* Allows description to grow as needed */
+}
+
+/* Item price styling */
+.item .price {
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* Item quantity styling */
+.item .quantity {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Button styling within item card */
+.item .button {
+    margin-top: auto; /* Pushes button to the bottom */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button hover effect */
+.item .button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Search input styling */
+#search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Search button styling */
+#search-button {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Search button hover effect */
+#search-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
